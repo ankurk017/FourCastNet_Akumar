@@ -1,0 +1,311 @@
+wandb_version: 1
+
+N_grid_channels:
+  desc: null
+  value: 0
+N_in_channels:
+  desc: null
+  value: 3
+N_out_channels:
+  desc: null
+  value: 3
+_config_name:
+  desc: null
+  value: afno_backbone_finetune
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.6
+    start_time: 1667590788.003929
+    t:
+      1:
+      - 1
+      - 41
+      - 49
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.6
+      5: 0.13.5
+      8:
+      - 5
+_yaml_filename:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/FourcastNet/config/AFNO.yaml
+add_grid:
+  desc: null
+  value: false
+add_noise:
+  desc: null
+  value: false
+batch_size:
+  desc: null
+  value: 1
+best_checkpoint_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0/training_checkpoints/best_ckpt.tar
+checkpoint_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0/training_checkpoints/ckpt.tar
+crop_size_x:
+  desc: null
+  value: null
+crop_size_y:
+  desc: null
+  value: null
+dt:
+  desc: null
+  value: 1
+enable_amp:
+  desc: null
+  value: true
+enable_nhwc:
+  desc: null
+  value: false
+entity:
+  desc: null
+  value: flowgan
+epsilon_factor:
+  desc: null
+  value: 0
+exp_dir:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp
+experiment_dir:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0
+global_means_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/global_mean.npy
+global_stds_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/global_std.npy
+gridtype:
+  desc: null
+  value: sinusoidal
+group:
+  desc: null
+  value: era5_precipafno_backbone_finetune
+ics_type:
+  desc: null
+  value: default
+in_channels:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+inf_data_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+local_rank:
+  desc: null
+  value: 0
+log_to_screen:
+  desc: null
+  value: true
+log_to_wandb:
+  desc: null
+  value: true
+loss:
+  desc: null
+  value: l2
+lr:
+  desc: null
+  value: '0.0001'
+masked_acc:
+  desc: null
+  value: false
+maskpath:
+  desc: null
+  value: null
+max_epochs:
+  desc: null
+  value: 50
+modes:
+  desc: null
+  value: 32
+n_history:
+  desc: null
+  value: 0
+n_initial_conditions:
+  desc: null
+  value: 5
+name:
+  desc: null
+  value: afno_backbone_finetune_0
+nettype:
+  desc: null
+  value: afno
+noise_std:
+  desc: null
+  value: 0
+normalization:
+  desc: null
+  value: zscore
+num_blocks:
+  desc: null
+  value: 8
+num_data_workers:
+  desc: null
+  value: 2
+optimizer_type:
+  desc: null
+  value: FusedAdam
+orography:
+  desc: null
+  value: false
+orography_path:
+  desc: null
+  value: null
+out_channels:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+params:
+  desc: null
+  value:
+    N_grid_channels: 0
+    N_in_channels: 3
+    N_out_channels: 3
+    add_grid: false
+    add_noise: false
+    batch_size: 1
+    best_checkpoint_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0/training_checkpoints/best_ckpt.tar
+    checkpoint_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0/training_checkpoints/ckpt.tar
+    crop_size_x: null
+    crop_size_y: null
+    dt: 1
+    enable_amp: true
+    enable_nhwc: false
+    entity: flowgan
+    epsilon_factor: 0
+    exp_dir: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp
+    experiment_dir: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/exp/afno_backbone_finetune/0
+    global_means_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/global_mean.npy
+    global_stds_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/global_std.npy
+    gridtype: sinusoidal
+    group: era5_precipafno_backbone_finetune
+    ics_type: default
+    in_channels:
+    - 0
+    - 1
+    - 2
+    inf_data_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+    local_rank: 0
+    log_to_screen: true
+    log_to_wandb: true
+    loss: l2
+    lr: '0.0001'
+    masked_acc: false
+    maskpath: null
+    max_epochs: 50
+    modes: 32
+    n_history: 0
+    n_initial_conditions: 5
+    name: afno_backbone_finetune_0
+    nettype: afno
+    noise_std: 0
+    normalization: zscore
+    num_blocks: 8
+    num_data_workers: 2
+    optimizer_type: FusedAdam
+    orography: false
+    orography_path: null
+    out_channels:
+    - 0
+    - 1
+    - 2
+    patch_size: 8
+    perturb: false
+    plot_animations: false
+    prediction_length: 41
+    prediction_type: iterative
+    pretrained: false
+    pretrained_ckpt_path: D:/fourcastnet/training_checkpoints/best_ckpt.tar
+    project: ERA5_precip
+    resuming: false
+    roll: false
+    save_channel: false
+    save_checkpoint: true
+    save_raw_forecasts: true
+    scheduler: CosineAnnealingLR
+    target: default
+    time_means_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/time_mean.npy
+    train_data_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+    two_step_training: true
+    valid_data_path: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+    width: 56
+    world_size: 1
+patch_size:
+  desc: null
+  value: 8
+perturb:
+  desc: null
+  value: false
+plot_animations:
+  desc: null
+  value: false
+prediction_length:
+  desc: null
+  value: 41
+prediction_type:
+  desc: null
+  value: iterative
+pretrained:
+  desc: null
+  value: false
+pretrained_ckpt_path:
+  desc: null
+  value: D:/fourcastnet/training_checkpoints/best_ckpt.tar
+project:
+  desc: null
+  value: ERA5_precip
+resuming:
+  desc: null
+  value: false
+roll:
+  desc: null
+  value: false
+save_channel:
+  desc: null
+  value: false
+save_checkpoint:
+  desc: null
+  value: true
+save_raw_forecasts:
+  desc: null
+  value: true
+scheduler:
+  desc: null
+  value: CosineAnnealingLR
+target:
+  desc: null
+  value: default
+time_means_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/traindata/time_mean.npy
+train_data_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+two_step_training:
+  desc: null
+  value: true
+valid_data_path:
+  desc: null
+  value: /nas/rstor/akumar/USA/PhD/FourCastNet/Training/train
+width:
+  desc: null
+  value: 56
+world_size:
+  desc: null
+  value: 1
